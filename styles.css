@@ -2,7 +2,7 @@
 .holder {
     display: flex; /* Enables flexbox for the container */
     flex-direction: row; /* Arranges flex items in a row */
-    justify-content: space-around; /* Distributes items evenly in the row with space around them */
+    justify-content: space-evenly; /* CORRECTED: Distributes items evenly with even space between, and at the start/end */
     flex-wrap: wrap; /* Allows flex items to wrap onto the next line if there's not enough space */
 
     /* Optional: Added some default styling for visualization */
@@ -21,7 +21,6 @@
     border-radius: 5px;
     font-size: 1.2em;
     text-align: center;
-    /* You can add flex-basis or width to items if you want more control over their initial size */
     flex-basis: 150px; /* Example: items will try to be 150px wide, but will wrap */
     flex-grow: 1; /* Allows items to grow if there's extra space */
     flex-shrink: 1; /* Allows items to shrink if necessary */
