@@ -1,2 +1,26 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex; /* Use flexbox for the layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-around; /* Evenly place items with space around them */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
+
+    /* Optional: Add some basic visual properties for demonstration */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    min-height: 100px; /* To make the holder visible */
+}
+
+/* Optional: Basic styling for items inside the holder for better visualization */
+.item {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    flex-basis: 150px; /* A base width for items, they will wrap if space is not enough */
+    text-align: center;
+}
